@@ -7,7 +7,7 @@ const posts = fs.readdirSync(route)
 	.filter(file => file.includes('.md'))
 	.map(file => {
 		const post = fs.readFileSync(path.resolve(route, file), 'utf-8')
-		return {...grayMatter(post).data, slug: file.replace('.md', '')}
+		return {...grayMatter(post).data, slug: `work/${file.replace('.md', '')}`}
 	})
 	.sort((a, b) => (a.order > b.order) ? 1 : -1)
 

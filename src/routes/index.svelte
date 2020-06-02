@@ -29,7 +29,7 @@
 <ul>
 	{#each posts as post}
 		<li>
-			<a rel='prefetch' href='work/{post.slug}'>
+			<a rel='prefetch' href={post.slug}>
 				{post.title}
 				<img src={post.thumbnail} alt={post.title} />
 			</a>
