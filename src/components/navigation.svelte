@@ -1,5 +1,10 @@
 <script>
-	export let segment;
+	export let current
+	export let works
+
+  import { stores } from '@sapper/app';
+	const { page } = stores();
+	$: path = $page.path
 </script>
 
 <style>
@@ -8,39 +13,9 @@
 		font-weight: 300;
 		padding: 0 1em;
 	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
 	[aria-current] {
-		position: relative;
-		display: inline-block;
+		color: red;
 	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
 	a {
 		text-decoration: none;
 		padding: 1em 0.5em;
@@ -51,14 +26,18 @@
 <nav>
 	<ul>
 		<li>
-			<a aria-current='{segment === undefined ? "page" : undefined}' href='/'>
-				work
+			<a aria-current='{!current ? 'true' : undefined}' href='/'>
+				(logo?)
 			</a>
 		</li>
-		<li>
-		<a aria-current='{segment === "about" ? "page" : undefined}' 	href='about'>
-			about
-		</a>
-		</li>
+		{#each works as work}
+			<li>
+				<a
+					href={work.slug}
+					aria-current={path.includes(work.slug) ? 'true' : undefined}>
+					{work.title}
+				</a>
+			</li>
+		{/each}
 	</ul>
 </nav>

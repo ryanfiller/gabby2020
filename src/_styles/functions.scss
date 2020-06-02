@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+@mixin small() {
+  @media screen and (min-width: $smallBreak) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (min-width: $mediumBreak) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (min-width: $largeBreak) {
+    @content;
+  }
+}
+
+@mixin extra() {
+  @media screen and (min-width: $extraBreak) {
+    @content;
+  }
+}

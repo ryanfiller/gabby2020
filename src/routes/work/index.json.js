@@ -13,12 +13,6 @@ const posts = fs.readdirSync(route)
 
 const contents = JSON.stringify(posts.map(post => {
 	return ({...post})
-	// return {
-	// 	title: post.title,
-	// 	slug: post.slug,
-	// 	thumbnail: post.thumbnail,
-	// 	order: post.order
-	// }
 }))
 
 export function get(req, res) {
