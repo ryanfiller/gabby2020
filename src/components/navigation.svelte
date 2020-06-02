@@ -7,29 +7,50 @@
 	$: path = $page.path
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
-	[aria-current] {
-		color: red;
-	}
+<style type="text/scss">
+	@import '../_styles/functions.scss';
+
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
 		display: block;
+
+		&[aria-current] {
+			color: red;
+		}
 	}
+	nav {
+		padding: 1rem;
+		display: flex;
+		justify-content: space-between;
+		
+		@include small() {
+			flex-direction: column;
+			justify-content: center;
+			padding: 2rem;
+		}
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		padding: 0;
+
+		@include small() {
+			display: block;
+			overflow: auto;
+		}
+	}
+
 </style>
 
 <nav>
+	<a
+		href='/'
+		aria-current='{!current ? 'true' : undefined}'
+	>
+		(logo?)
+	</a>
 	<ul>
-		<li>
-			<a aria-current='{!current ? 'true' : undefined}' href='/'>
-				(logo?)
-			</a>
-		</li>
 		{#each works as work}
 			<li>
 				<a
@@ -40,4 +61,10 @@
 			</li>
 		{/each}
 	</ul>
+	<a
+		href='about'
+		aria-current={path.includes('about') ? 'true' : undefined}
+	>
+		About
+	</a>
 </nav>

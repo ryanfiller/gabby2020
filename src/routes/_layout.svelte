@@ -19,15 +19,22 @@
 	:global(#sapper) {
 		@include small() {
 			display: flex;
+			height: 100vh;
+			width: 100vw;
 		}
 	}
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
+
+	:global(nav) {
+		align-self: stretch;
+		width: 100%;
+
+		@include small() {
+			max-width: 20vw;
+		}
+	}
+	:global(main) {
+		align-self: stretch;
+		flex: 1;
 	}
 </style>
 
