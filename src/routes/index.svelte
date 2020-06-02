@@ -23,7 +23,7 @@
 </style>
 
 <svelte:head>
-	<title>work</title>
+	<title>gabby windham</title>
 </svelte:head>
 
 <ul>
