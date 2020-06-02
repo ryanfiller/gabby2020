@@ -1,5 +1,6 @@
 ---
 title: first post
+thumbnail: images/successkid.jpg 
 order: 100
 ---
 

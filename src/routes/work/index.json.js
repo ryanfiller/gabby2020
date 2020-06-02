@@ -12,11 +12,13 @@ const posts = fs.readdirSync(route)
 	.sort((a, b) => (a.order > b.order) ? 1 : -1)
 
 const contents = JSON.stringify(posts.map(post => {
-	return {
-		title: post.title,
-		slug: post.slug,
-		order: post.order
-	}
+	return ({...post})
+	// return {
+	// 	title: post.title,
+	// 	slug: post.slug,
+	// 	thumbnail: post.thumbnail,
+	// 	order: post.order
+	// }
 }))
 
 export function get(req, res) {

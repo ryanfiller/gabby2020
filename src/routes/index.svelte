@@ -15,6 +15,11 @@
 		margin: 0 0 1em 0;
 		line-height: 1.5;
 	}
+
+	img {
+		display: block;
+		width: 250px;
+	}
 </style>
 
 <svelte:head>
@@ -23,6 +28,11 @@
 
 <ul>
 	{#each posts as post}
-		<li><a rel='prefetch' href='work/{post.slug}'>{post.title}</a></li>
+		<li>
+			<a rel='prefetch' href='work/{post.slug}'>
+				{post.title}
+				<img src={post.thumbnail} alt={post.title} />
+			</a>
+		</li>
 	{/each}
 </ul>
