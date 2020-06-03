@@ -25,7 +25,6 @@
 		
 		@include small() {
 			flex-direction: column;
-			justify-content: center;
 			padding: 2rem;
 		}
 	}

@@ -35,6 +35,11 @@
 	:global(main) {
 		align-self: stretch;
 		flex: 1;
+		padding: 1rem;
+
+		@include small() {
+			padding: 2rem;
+		}
 	}
 </style>
 

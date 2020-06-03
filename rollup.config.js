@@ -16,7 +16,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const preprocess = [
 	mdsvex({
 		extension: '.md',
-		layouts: {
+		layout: {
 			goals: 'src/routes/work/_layout.svelte',
 		}
 	}),
