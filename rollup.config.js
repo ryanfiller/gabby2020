@@ -17,7 +17,7 @@ const preprocess = [
 	mdsvex({
 		extension: '.md',
 		layout: {
-			goals: 'src/routes/work/_layout.svelte',
+			work: 'src/routes/work/_work_layout.svelte',
 		}
 	}),
 	scss()

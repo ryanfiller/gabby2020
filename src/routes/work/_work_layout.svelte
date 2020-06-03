@@ -1,3 +1,8 @@
+<script context="module">
+  import img from '../../components/img.svelte'
+  export { img }
+</script>
+
 <script>
   export let title
 </script>
