@@ -17,7 +17,7 @@
 <style type="text/scss">
 	@import '../_styles/functions.scss';
 	:global(#sapper) {
-		@include small() {
+		@include nav() {
 			display: flex;
 			height: 100vh;
 			width: 100vw;
@@ -28,17 +28,21 @@
 		align-self: stretch;
 		width: 100%;
 
-		@include small() {
-			max-width: 20vw;
+		@include nav() {
+			flex: 1;
+			min-width: 10rem;
+			max-width: 15vw;
 		}
 	}
 	:global(main) {
 		align-self: stretch;
 		flex: 1;
 		padding: 1rem;
+		background: lightgrey;
 
-		@include small() {
+		@include nav() {
 			padding: 2rem;
+			overflow: auto;
 		}
 	}
 </style>

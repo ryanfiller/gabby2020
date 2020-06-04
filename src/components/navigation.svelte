@@ -10,6 +10,16 @@
 <style type="text/scss">
 	@import '../_styles/functions.scss';
 
+	.logo {
+		display: block;
+		width: 3.5rem;
+		
+		@include small() {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
 	a {
 		text-decoration: none;
 		display: block;
@@ -44,10 +54,11 @@
 
 <nav>
 	<a
+		class='logo'
 		href='/'
 		aria-current='{!current ? 'true' : undefined}'
 	>
-		(logo?)
+		<img src='gw-logo-F.svg' alt='logo'>
 	</a>
 	<ul>
 		{#each works as work}

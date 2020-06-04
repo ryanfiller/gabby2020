@@ -3,6 +3,4 @@
   export let src
 </script>
 
-asdfasdf
-<img class="asdf" src={src} alt={alt} />
-asdfasdf
+<img class="asdf" src={`${src}?nf_resize=fit&w=300&h=400`} alt={alt} />
