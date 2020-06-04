@@ -1,64 +1,80 @@
 <script>
-	export let segment;
+	export let current
+	export let works
+
+  import { stores } from '@sapper/app';
+	const { page } = stores();
+	$: path = $page.path
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+<style type="text/scss">
+	@import '../_styles/functions.scss';
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
+	.logo {
 		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
+		width: 3.5rem;
+		
+		@include small() {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
 		display: block;
+
+		&[aria-current] {
+			color: red;
+		}
 	}
+	nav {
+		padding: 1rem;
+		display: flex;
+		justify-content: space-between;
+		
+		@include small() {
+			flex-direction: column;
+			padding: 2rem;
+		}
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		padding: 0;
+
+		@include small() {
+			display: block;
+			overflow: auto;
+		}
+	}
+
 </style>
 
 <nav>
+	<a
+		class='logo'
+		href='/'
+		aria-current='{!current ? 'true' : undefined}'
+	>
+		<img src='gw-logo-F.svg' alt='logo'>
+	</a>
 	<ul>
-		<li>
-			<a aria-current='{segment === undefined ? "page" : undefined}' href='/'>
-				work
-			</a>
-		</li>
-		<li>
-		<a aria-current='{segment === "about" ? "page" : undefined}' 	href='about'>
-			about
-		</a>
-		</li>
+		{#each works as work}
+			<li>
+				<a
+					href={work.slug}
+					aria-current={path.includes(work.slug) ? 'true' : undefined}>
+					{work.title}
+				</a>
+			</li>
+		{/each}
 	</ul>
+	<a
+		href='about'
+		aria-current={path.includes('about') ? 'true' : undefined}
+	>
+		About
+	</a>
 </nav>

@@ -7,18 +7,12 @@ const posts = fs.readdirSync(route)
 	.filter(file => file.includes('.md'))
 	.map(file => {
 		const post = fs.readFileSync(path.resolve(route, file), 'utf-8')
-		return {...grayMatter(post).data, slug: file.replace('.md', '')}
+		return {...grayMatter(post).data, slug: `work/${file.replace('.md', '')}`}
 	})
 	.sort((a, b) => (a.order > b.order) ? 1 : -1)
 
 const contents = JSON.stringify(posts.map(post => {
 	return ({...post})
-	// return {
-	// 	title: post.title,
-	// 	slug: post.slug,
-	// 	thumbnail: post.thumbnail,
-	// 	order: post.order
-	// }
 }))
 
 export function get(req, res) {
