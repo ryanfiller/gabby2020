@@ -1,4 +1,5 @@
 <script>
+  import Img from './img.svelte'
   export let posts
 </script>
 
