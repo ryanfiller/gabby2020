@@ -1,9 +1,23 @@
 ---
 title: Monogram Website Redesign
-thumbnail: images/MonogramScreen-01.png
+thumbnail: images/MonogramScreen-Small.png
 order: 300
 ---
 
-this is the first post
+Monogram Foods Website Redesign Mockups
 
-!['alt text here'](images/successkid.jpg)
+Designs for two early-stage options for the redesign of the Monogram Foods website. Mockups contain placeholder text and FPO stock photography.
+
+!['alt text here'](images/MonogramScreen-Small.png)
+
+Option 1 Monogram Mockups — Homepage
+!['alt text here'](images/Monogram-1Home-Small.jpg)
+
+Option 1 Monogram Mockups — Who We Are Page
+!['alt text here'](images/Monogram-1About-Small.jpg)
+
+Option 2 Monogram Mockups — Homepage
+!['alt text here'](images/Monogram-2Home-Small.jpg)
+
+Option 2 Monogram Mockups — Who We Are Page
+!['alt text here'](images/Monogram-2About-Small.jpg)

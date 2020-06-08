@@ -1,9 +1,15 @@
 ---
 title: Transition Design Booklet
-thumbnail: images/transitiondesign-cover.jpg
+thumbnail: images/TransitionBooklet-Cover-Mockup-Small.png
 order: 400
 ---
 
-this is the first post
+Transition Design Booklet
 
-!['alt text here'](images/successkid.jpg)
+Created as part of research and of the emerging field of transition design. Booklet
+format utilized to compile and break-down information into sequential and
+categorized portions. Select spreads shown.
+
+!['alt text here'](images/TransitionBooklet-Cover-Mockup-Small.png)
+
+!['alt text here'](images/TransitionBooklet-Pages-Mockup-Small.png)
