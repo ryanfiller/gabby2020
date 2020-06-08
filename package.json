@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "sapper dev --ext '.svelte .md'",
     "build": "sapper build --legacy --ext '.svelte .md'",
-    "export": "sapper export --legacy",
+    "export": "sapper export --legacy --ext '.svelte .md'",
     "start": "node __sapper__/build"
   },
   "dependencies": {
