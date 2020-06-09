@@ -1,7 +1,7 @@
 ---
 title: Williams Sonoma Videos
 thumbnail: images/WS-Snapchat-ImageForWeb-01.png
-order: 500
+order: 450
 ---
 
 Williams Sonoma Most Wonderful Job Of The Year

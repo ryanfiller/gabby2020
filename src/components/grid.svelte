@@ -11,7 +11,7 @@
     padding: 0;
     display: grid;
     gap: 1rem;
-    grid-template-rows: 33%;
+    grid-template-rows: repeat(100, 300px);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     // grid-template-columns: repeat(2, 1fr);
 
@@ -32,7 +32,8 @@
     }
 
     li {
-      grid-row: span 2;
+      // grid-row: span 2;
+      grid-row: span 1;
 
       &:nth-child(2) {
         grid-row: span 1;
