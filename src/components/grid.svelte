@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte' 	
   let AwesomeGrid
+
   onMount(async ()=>{ 		
     const ag = await import('awesome-grid') 		
     AwesomeGrid = ag.default 		
@@ -25,8 +26,7 @@
 </script>
 
 <style type="text/scss">
-  @import '../_styles/functions.scss';
-
+  // TODO fallback styles for when js doesn't load
 	ul {
     list-style: none;
     padding: 0;
@@ -44,7 +44,7 @@
 		<li>
 			<a rel='prefetch' href={post.slug}>
 				<!-- {post.title} -->
-				<img src={post.thumbnail} alt={post.title} />
+				<img src={`${post.thumbnail}?nf_resize=fit&w=300} alt={post.title} />
 			</a>
 		</li>
 	{/each}
