@@ -31,6 +31,9 @@
     list-style: none;
     padding: 0;
     li {
+      a {
+        display: block;
+      }
       img {
         width: 100%;
         height: auto;

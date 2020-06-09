@@ -19,7 +19,6 @@
 	:global(#sapper) {
 		@include nav() {
 			display: flex;
-			height: 100vh;
 			width: 100vw;
 		}
 	}
@@ -30,8 +29,8 @@
 
 		@include nav() {
 			flex: 1;
-			min-width: 10rem;
-			max-width: 15vw;
+			min-width: 15rem;
+			max-width: 20rem;
 		}
 	}
 	:global(main) {

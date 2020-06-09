@@ -11,12 +11,18 @@
 	@import '../_styles/functions.scss';
 
 	.logo {
-		display: block;
-		width: 3.5rem;
-		
-		@include small() {
-			width: 100%;
-			margin: 0 auto;
+		color: black !important;
+		font-weight: bold;
+		text-align: center;
+		img {
+			display: block;
+			width: 3.5rem;
+			
+			@include small() {
+				width: 100%;
+				max-width: 7.5rem;
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -31,7 +37,7 @@
 	nav {
 		padding: 1rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		
 		@include small() {
 			flex-direction: column;
@@ -48,6 +54,16 @@
 			display: block;
 			overflow: auto;
 		}
+
+		li {
+			padding: .5em 0;
+		}
+	}
+
+	hr {
+		color: transparent;
+		border: .125rem solid yellow;
+		margin: 1rem 0;
 	}
 
 </style>
@@ -59,7 +75,9 @@
 		aria-current='{!current ? 'true' : undefined}'
 	>
 		<img src='gw-logo-F.svg' alt='logo'>
+		<span>GABBY WINDHAM</span>
 	</a>
+
 	<ul>
 		{#each works as work}
 			<li>
@@ -71,10 +89,18 @@
 			</li>
 		{/each}
 	</ul>
-	<a
-		href='about'
-		aria-current={path.includes('about') ? 'true' : undefined}
-	>
-		About
-	</a>
+
+	<hr />
+
+	<ul>
+			<li>
+				<a
+					href='about'
+					aria-current={path.includes('about') ? 'true' : undefined}
+				>
+					About
+				</a>
+			</li>
+	</ul>
+	
 </nav>
