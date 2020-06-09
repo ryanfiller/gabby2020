@@ -10,12 +10,12 @@
 	import Navigation from '../components/navigation.svelte'
 
 	export let segment
-	// TODO makes `works` into a store
 	export let works
 </script>
 
 <style type="text/scss">
 	@import '../_styles/functions.scss';
+	
 	:global(#sapper) {
 		@include nav() {
 			display: flex;

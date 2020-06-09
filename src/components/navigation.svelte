@@ -18,7 +18,7 @@
 			display: block;
 			width: 3.5rem;
 			
-			@include small() {
+			@include nav() {
 				width: 100%;
 				max-width: 7.5rem;
 				margin: 0 auto;
@@ -39,19 +39,22 @@
 		display: flex;
 		justify-content: flex-start;
 		
-		@include small() {
+		@include nav() {
 			flex-direction: column;
 			padding: 2rem;
 		}
 	}
 
 	ul {
-		display: none;
 		list-style: none;
 		padding: 0;
 
-		@include small() {
-			display: block;
+		&.work {
+			display: none;
+		}
+
+		@include nav() {
+			display: block !important;
 			overflow: auto;
 		}
 
@@ -62,8 +65,11 @@
 
 	hr {
 		color: transparent;
-		border: .125rem solid yellow;
 		margin: 1rem 0;
+
+		@include nav() {
+			border: .125rem solid yellow;
+		}
 	}
 
 </style>
@@ -78,7 +84,7 @@
 		<span>GABBY WINDHAM</span>
 	</a>
 
-	<ul>
+	<ul class='work'>
 		{#each works as work}
 			<li>
 				<a
