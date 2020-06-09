@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>gabby windham</title>
+	<title>Gabby Windham</title>
 </svelte:head>
 
 <Grid posts={posts} />

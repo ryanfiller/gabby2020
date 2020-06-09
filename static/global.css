@@ -28,3 +28,7 @@ h1 {
 a {
 	color: inherit;
 }
+
+img {
+	pointer-events: none;
+}

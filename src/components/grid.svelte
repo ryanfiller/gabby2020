@@ -12,12 +12,11 @@
       tv: 1400,
     })
       .gutters(16)
-      .grid(1)
+      .grid(2)
       .mobile(2)
       .tablet(3)
       .desktop(4)
       .tv(5)
-
   }) 
 
 
@@ -26,11 +25,26 @@
 </script>
 
 <style type="text/scss">
-  // TODO fallback styles for when js doesn't load
+  @import '../_styles/functions.scss';
+
 	ul {
     list-style: none;
     padding: 0;
+
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    @include small() { grid-template-columns: repeat(2, 1fr); }
+    @include medium() { grid-template-columns: repeat(3, 1fr); }
+    @include large() { grid-template-columns: repeat(4, 1fr); }
+    @include extra() { grid-template-columns: repeat(5, 1fr); }
+
     li {
+
+      a {
+        display: block;
+      }
       img {
         width: 100%;
         height: auto;
