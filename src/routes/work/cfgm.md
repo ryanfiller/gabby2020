@@ -1,10 +1,8 @@
 ---
-title: The Community Foundation of Greater Memphis
+title: The Community Foundation of Greater Memphis Campaign
 thumbnail: images/CFGM-Photo-Small.jpg 
 order: 100
 ---
-
-The Community Foundation of Greater Memphis
 
 Campaign developed to celebrate the 50th anniversary of The Community Foundation of Greater Memphis and the work they’ve contributed to the city over the past half century. 
 

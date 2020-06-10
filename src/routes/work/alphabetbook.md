@@ -1,6 +1,6 @@
 ---
 title: Alphabet Book
-thumbnail: images/alphabet-book.jpg
+thumbnail: images/alphabet-book-Small.jpg
 order: 1100
 ---
 
@@ -10,7 +10,7 @@ Created as part of a series of books focused on typographic exploration. Utilize
 the idea of progression through the alphabet using strings to create forms—for
 each letter one more string is added. Selected spreads.
 
-!['alt text here'](images/alphabet-book.jpg)
+!['alt text here'](images/alphabet-book-Small.jpg)
 
 !['alt text here'](images/alphabet-book-fg.jpg)
 
