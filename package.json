@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "gabbyportfolio2020",
+  "description": "gabby's portfolio 2020",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev --ext '.svelte .md'",
