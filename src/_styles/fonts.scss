@@ -1,0 +1,119 @@
+@mixin sansSerif($weight: 400, $style: normal) {
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// // Mr Eaves Mod OT Reg
+// font-family: mr-eaves-modern, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
+// // Mr Eaves Mod OT Bold Italic
+// font-family: mr-eaves-modern, sans-serif;
+// font-weight: 700;
+// font-style: italic;
+
+
+// // Mr Eaves Mod OT Bold
+// font-family: mr-eaves-modern, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+
+// // Mr Eaves Mod OT Reg Italic
+// font-family: mr-eaves-modern, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+
+// // Mr Eaves San OT Reg Italic
+// font-family: mr-eaves-sans, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+
+// // Mr Eaves San OT Reg
+// font-family: mr-eaves-sans, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
+// // Mr Eaves San OT Bold
+// font-family: mr-eaves-sans, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+
+// // Mr Eaves San OT Bold Italic
+// font-family: mr-eaves-sans, sans-serif;
+// font-weight: 700;
+// font-style: italic;
+
+
+@mixin serif($weight: 400, $style: normal) {
+  font-family: kepler-std, serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// // Kepler Std Regular
+// font-family: kepler-std, serif;
+// font-weight: 400;
+// font-style: normal;
+
+// // Kepler Std Italic
+// font-family: kepler-std, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// // Kepler Std Bold
+// font-family: kepler-std, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// // Kepler Std Bold Italic
+// font-family: kepler-std, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// // Kepler Std Bold Display
+// font-family: kepler-std-display, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// // Kepler Std Bold Italic Display
+// font-family: kepler-std-display, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// // Kepler Std Italic Display
+// font-family: kepler-std-display, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// // Kepler Std Display
+// font-family: kepler-std-display, serif;
+// font-weight: 400;
+// font-style: normal;
+
+// // Kepler Std Bold Subhead
+// font-family: kepler-std-subhead, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// // Kepler Std Bold Italic Subhead
+// font-family: kepler-std-subhead, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// // Kepler Std Italic Subhead
+// font-family: kepler-std-subhead, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// // Kepler Std Subhead
+// font-family: kepler-std-subhead, serif;
+// font-weight: 400;
+// font-style: normal;

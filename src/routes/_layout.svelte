@@ -15,6 +15,11 @@
 
 <style type="text/scss">
 	@import '../_styles/functions.scss';
+	@import '../_styles/fonts.scss';
+
+	:global(body, html) {
+		@include sansSerif(400, normal);
+	}
 	
 	:global(#sapper) {
 		@include nav() {
