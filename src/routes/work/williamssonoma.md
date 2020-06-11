@@ -1,10 +1,10 @@
 ---
-title: Williams Sonoma Most Wonderful Job of the Year Videos
-thumbnail: images/WS-Snapchat-ImageForWeb-01.png
+title: Most Wonderful Job Video
+thumbnail: images/WS-Thumbnail-Small.jpg
 order: 450
 ---
 
-Videos and gifs for social media to work alongside an ongoing Williams Sonoma recruiting effort to attract winter holiday and part-time workers for their warehouse.
+Videos and gifs created for use on social media as part of an ongoing *Williams Sonoma* recruiting effort to attract winter holiday and part-time workers for their warehouse.
 
 30 Second Animated Video
 !['alt text here'](images/WS-MostWonderfulJob-Video.mp4)

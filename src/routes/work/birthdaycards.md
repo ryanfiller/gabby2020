@@ -4,9 +4,7 @@ thumbnail: images/BDay-Doggone-Small.jpg
 order: 700
 ---
 
-Animal Birthday Cards
-
-Illustrations and hand-lettering for a set of two animal-themed birthday cards. Used by the agency culture team, to share fun messages of appreciation to recognize birthdays among co-workers.
+Illustrations and hand-lettering for a set of two animal-themed birthday cards. Utilized by an agency culture team to share fun messages of appreciation and recognition during co-worker's birthdays.
 
 !['alt text here'](images/Doggone-Mockup-Small.jpg)
 

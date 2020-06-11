@@ -7,10 +7,25 @@
   export let title
 </script>
 
+<style type="text/scss">
+  @import '../../_styles/fonts.scss';
+  
+  	h1 {
+    @include serif(700, normal);
+    }
+
+  div {
+    max-width: 50rem;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+</style>
+
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
 
+<div> 
 <h1>{title}</h1>
-
-<slot />
+<slot /> 
+</div>

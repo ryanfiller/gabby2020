@@ -1,12 +1,10 @@
 ---
-title: Project an Assemblage of Graphic Design
+title: Project Exhibition
 thumbnail: images/Project-Poster.jpg
 order: 1200
 ---
 
-Project an Assemblage of Graphic Design
-
-Created for student exhibition highlighting graphic design work. The theme and visuals recognize the individuality of graphic design, as well as play off of the fact that the word “project,” is a homograph.
+Theming created for student exhibition highlighting graphic design work. The exhibition name and visuals play off of the individuality of graphic design and that the word “Project” is a homograph.
 
 !['alt text here'](images/Project-Poster.jpg)
 

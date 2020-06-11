@@ -13,15 +13,13 @@
 	.logo {
 		color: black !important;
 		font-weight: bold;
-		text-align: center;
 		img {
 			display: block;
-			width: 3.5rem;
+			width: 13rem;
 			
 			@include nav() {
 				width: 100%;
-				max-width: 7.5rem;
-				margin: 0 auto;
+				max-width: 17rem;
 			}
 		}
 	}
@@ -31,11 +29,11 @@
 		display: block;
 
 		&[aria-current] {
-			color: red;
+			color: #ffce00;
 		}
 	}
 	nav {
-		padding: 1rem;
+		padding: .75rem;
 		display: flex;
 		justify-content: flex-start;
 		
@@ -48,9 +46,13 @@
 	ul {
 		list-style: none;
 		padding: 0;
+	
 
 		&.work {
 			display: none;
+			margin-top: 5rem;
+			border-bottom: .1rem solid #ffce00;
+			margin-bottom: .25rem;
 		}
 
 		@include nav() {
@@ -59,16 +61,7 @@
 		}
 
 		li {
-			padding: .5em 0;
-		}
-	}
-
-	hr {
-		color: transparent;
-		margin: 1rem 0;
-
-		@include nav() {
-			border: .125rem solid yellow;
+			padding: .45rem 0;
 		}
 	}
 
@@ -80,8 +73,7 @@
 		href='/'
 		aria-current='{!current ? 'true' : undefined}'
 	>
-		<img src='gw-logo-F.svg' alt='logo'>
-		<span>GABBY WINDHAM</span>
+		<img src='logo-name.svg' alt='logo'>
 	</a>
 
 	<ul class='work'>
@@ -95,8 +87,6 @@
 			</li>
 		{/each}
 	</ul>
-
-	<hr />
 
 	<ul>
 			<li>

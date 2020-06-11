@@ -1,23 +1,21 @@
 ---
-title: The Community Foundation of Greater Memphis Campaign
+title: Transformation Starts Here
 thumbnail: images/CFGM-Photo-Small.jpg 
 order: 100
 ---
 
-Campaign developed to celebrate the 50th anniversary of The Community Foundation of Greater Memphis and the work they’ve contributed to the city over the past half century. 
+The overarching campaign, "Transformation Starts Here," was developed for *The Community Foundation of Greater Memphis* to celebrate their 50th anniversary and the work they’ve contributed to the city over the past half century. The theming spanned across all assets used throughout the year, culminating in the final event — The Community Celebration at the Levitt Shell. Select assets shown.
 
 !['alt text here'](images/CFGM-Photo-Small.jpg)
 
-Die-cut Invitation Sleeve—Front
+Die-cut Invitation Sleeve—Front and Back
 !['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg)
 
-Invitation Sleeve—Back
 !['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg)
 
-Invitation—Front
+Invitation—Front and Back
 !['alt text here'](images/CFGM-Invite-Front-Small.jpg)
 
-Invitation—Back
 !['alt text here'](images/CFGM-Invite-Back-Small.jpg)
 
 Invitation—Digital
@@ -32,7 +30,7 @@ Youtube Cover Photo
 Website Promo Block
 !['alt text here'](images/CFGM-Promo-Small.jpg)
 
-Annual Report Book
+Annual Report Book—Cover and Select Spreads
 !['alt text here'](images/CFGM-AR-Cover-Small.jpg)
 
 !['alt text here'](images/CFGM-AR-Spread1-Small.jpg)

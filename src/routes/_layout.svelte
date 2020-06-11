@@ -29,20 +29,22 @@
 	}
 
 	:global(nav) {
+		@include serif (700,normal);
+
 		align-self: stretch;
 		width: 100%;
 
 		@include nav() {
 			flex: 1;
-			min-width: 15rem;
-			max-width: 20rem;
+			min-width: 10.5rem;
+			max-width: 15.5rem;
 		}
 	}
 	:global(main) {
 		align-self: stretch;
 		flex: 1;
 		padding: 1rem;
-		background: lightgrey;
+		background: #eceeee;
 
 		@include nav() {
 			padding: 2rem;

@@ -11,12 +11,12 @@
       desktop: 992,
       tv: 1400,
     })
-      .gutters(16)
+      .gutters(12)
       .grid(2)
       .mobile(2)
       .tablet(3)
-      .desktop(4)
-      .tv(5)
+      .desktop(3)
+      .tv(4)
   }) 
 
 
@@ -33,12 +33,12 @@
 
     display: grid;
     grid-template-rows: auto;
-    gap: 16px;
+    gap: 12px;
     grid-template-columns: repeat(2, 1fr);
     @include small() { grid-template-columns: repeat(2, 1fr); }
     @include medium() { grid-template-columns: repeat(3, 1fr); }
-    @include large() { grid-template-columns: repeat(4, 1fr); }
-    @include extra() { grid-template-columns: repeat(5, 1fr); }
+    @include large() { grid-template-columns: repeat(3, 1fr); }
+    @include extra() { grid-template-columns: repeat(4, 1fr); }
 
     li {
 
