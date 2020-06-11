@@ -8,6 +8,7 @@ import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import { mdsvex } from 'mdsvex';
 import { scss } from 'svelte-preprocess';
+import attr from 'remark-attr'
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -18,7 +19,10 @@ const preprocess = [
 		extension: '.md',
 		layout: {
 			work: 'src/routes/work/_work_layout.svelte',
-		}
+		},
+		remarkPlugins: [
+			[attr, { scope: 'every' }]
+		]
 	}),
 	scss()
 ]
