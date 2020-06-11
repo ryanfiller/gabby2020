@@ -58,7 +58,7 @@
 		<li>
 			<a rel='prefetch' href={post.slug}>
 				<!-- {post.title} -->
-				<img src={`${post.thumbnail}?nf_resize=fit&w=300`} alt={post.title} />
+				<img src={`${post.thumbnail}?nf_resize=fit&w=800`} alt={post.title} />
 			</a>
 		</li>
 	{/each}
