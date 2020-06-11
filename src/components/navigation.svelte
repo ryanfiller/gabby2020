@@ -15,7 +15,7 @@
 		font-weight: bold;
 		img {
 			display: block;
-			width: 13rem;
+			width: 7.5rem;
 			
 			@include nav() {
 				width: 100%;
@@ -36,23 +36,21 @@
 		padding: .75rem;
 		display: flex;
 		justify-content: flex-start;
+		font-size: .75rem;
 		
 		@include nav() {
 			flex-direction: column;
-			padding: 2rem;
+			padding: 1.25rem;
 		}
 	}
 
 	ul {
 		list-style: none;
-		padding: 0;
-	
+		padding: .25rem;
+		margin: 1rem 0;
 
 		&.work {
 			display: none;
-			margin-top: 5rem;
-			border-bottom: .1rem solid #ffce00;
-			margin-bottom: .25rem;
 		}
 
 		@include nav() {
@@ -62,6 +60,19 @@
 
 		li {
 			padding: .45rem 0;
+		}
+	}
+
+	hr {
+		height: 2px;
+		border: none;
+		width: 100%;
+		margin: 0;
+		background-color: #ffce00;
+		display: none;
+
+		@include nav() {
+			display: block;
 		}
 	}
 
@@ -87,6 +98,8 @@
 			</li>
 		{/each}
 	</ul>
+
+	<hr />
 
 	<ul>
 			<li>
