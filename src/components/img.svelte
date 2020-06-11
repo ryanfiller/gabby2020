@@ -15,5 +15,5 @@
 {#if src.includes('.mp4')}
   <Video src={src} />
 {:else }
-  <img src={`${src}?nf_resize=fit&w=12000`} alt={alt} />
+  <img src={`${src}?nf_resize=fit&w=1200`} alt={alt} />
 {/if}
