@@ -4,14 +4,22 @@ thumbnail: images/CFGM-Photo-Small.jpg
 order: 100
 ---
 
-The overarching campaign, "Transformation Starts Here," was developed for *The Community Foundation of Greater Memphis* to celebrate their 50th anniversary and the work they’ve contributed to the city over the past half century. The theming spanned across all assets used throughout the year, culminating in the final event — The Community Celebration at the Levitt Shell. Select assets shown.
+<script>
+  import Grid from '../../components/interior-grid.svelte'
+</script>
+
+The overarching campaign, 'Transformation Starts Here," was developed for *The Community Foundation of Greater Memphis* to celebrate their 50th anniversary and the work they’ve contributed to the city over the past half century. The theming spanned across all assets used throughout the year, culminating in the final event — The Community Celebration at the Levitt Shell. Select assets shown.
 
 !['alt text here'](images/CFGM-Photo-Small.jpg)
 
 Die-cut Invitation Sleeve—Front and Back
-!['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg)
 
-!['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg)
+<Grid>
+
+  !['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg){gridArea='1 / 1 / 2 / 3'}
+
+  !['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg){gridArea='2 / 2 / 3 / 4'}
+</Grid>
 
 Invitation—Front and Back
 !['alt text here'](images/CFGM-Invite-Front-Small.jpg)

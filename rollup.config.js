@@ -9,6 +9,8 @@ import pkg from './package.json';
 import { mdsvex } from 'mdsvex';
 import { scss } from 'svelte-preprocess';
 import attr from 'remark-attr'
+import unwrapImages  from 'remark-unwrap-images'
+
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -21,7 +23,8 @@ const preprocess = [
 			work: 'src/routes/work/_work_layout.svelte',
 		},
 		remarkPlugins: [
-			[attr, { scope: 'every' }]
+			[attr, { scope: 'every' }],
+			unwrapImages
 		]
 	}),
 	scss()
