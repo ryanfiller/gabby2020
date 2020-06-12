@@ -7,7 +7,7 @@
 </script>
 
 <script>
-	import Grid from '../components/grid.svelte'
+	import Grid from '../components/home-grid.svelte'
 	export let posts;
 </script>
 

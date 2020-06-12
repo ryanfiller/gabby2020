@@ -1,7 +1,10 @@
 <script>
+  import Video from './video.svelte'
   export let alt
   export let src
-  import Video from './video.svelte'
+
+  export let gridArea
+  const style = `grid-area: ${gridArea};`
 </script>
 
 <style>
@@ -13,7 +16,7 @@
 </style>
 
 {#if src.includes('.mp4')}
-  <Video src={src} />
+  <Video src={src} {style} />
 {:else }
-  <img src={`${src}?nf_resize=fit&w=1200`} alt={alt} />
+  <img src={`${src}?nf_resize=fit&w=1200`} alt={alt} {style} />
 {/if}
