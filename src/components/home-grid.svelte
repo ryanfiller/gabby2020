@@ -1,22 +1,23 @@
 <script>
   import { onMount } from 'svelte' 	
-  let AwesomeGrid
+  let Macy
 
   onMount(async ()=>{ 		
-    const ag = await import('awesome-grid') 		
-    AwesomeGrid = ag.default 		
-    new AwesomeGrid('ul#grid', {
-      mobile: 576,
-      tablet: 768,
-      desktop: 992,
-      tv: 1400,
+    const macy = await import('macy') 		
+    Macy = macy.default 		
+    var grid = Macy({
+      container: '#grid',
+      trueOrder: false,
+      waitForImages: false,
+      margin: 12,
+      columns: 4,
+      breakAt: {
+          1400: 4,
+          992: 3,
+          768: 3,
+          576: 2
+        }
     })
-      .gutters(12)
-      .grid(2)
-      .mobile(2)
-      .tablet(3)
-      .desktop(3)
-      .tv(4)
   }) 
 
 
@@ -54,12 +55,12 @@
 </style>
 
 <ul id='grid'>
-	{#each posts as post}
-		<li>
-			<a rel='prefetch' href={post.slug}>
-				<!-- {post.title} -->
-				<img src={`${post.thumbnail}?nf_resize=fit&w=800`} alt={post.title} />
-			</a>
-		</li>
-	{/each}
+  {#each posts as post}
+    <li>
+      <a rel='prefetch' href={post.slug}>
+        <!-- {post.title} -->
+        <img src={`${post.thumbnail}?nf_resize=fit&w=800`} alt={post.title} />
+      </a>
+    </li>
+  {/each}
 </ul>
