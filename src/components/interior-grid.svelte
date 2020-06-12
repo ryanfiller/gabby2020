@@ -7,6 +7,11 @@
       grid-gap: 12px;
       grid-template-columns: auto;
       grid-template-rows: auto;
+
+      & > :global(img) {
+        height: auto;
+        width: auto;
+      }
     }
   }
 </style>
