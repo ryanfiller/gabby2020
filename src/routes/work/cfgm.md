@@ -16,9 +16,9 @@ Die-cut Invitation Sleeve—Front and Back
 
 <Grid>
 
-  !['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg){gridArea='1 / 2 / 2 / 3'}
+  !['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg){gridArea='1 / 1 / 2 / 3'}
 
-  !['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg){align='right'}
+  !['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg){gridArea='2 / 2 / 3 / 4'}
 </Grid>
 
 Invitation—Front and Back
