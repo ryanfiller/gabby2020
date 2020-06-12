@@ -29,7 +29,7 @@
 	}
 
 	:global(nav) {
-		@include serif (700,normal);
+		
 
 		align-self: stretch;
 		width: 100%;

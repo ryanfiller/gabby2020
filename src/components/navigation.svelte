@@ -16,6 +16,7 @@
 		img {
 			display: block;
 			width: 7.5rem;
+			margin-top:.75rem;
 			
 			@include nav() {
 				width: 100%;
@@ -36,7 +37,7 @@
 		padding: .75rem;
 		display: flex;
 		justify-content: flex-start;
-		font-size: .75rem;
+		font-size: .8rem;
 		
 		@include nav() {
 			flex-direction: column;
@@ -51,6 +52,7 @@
 
 		&.work {
 			display: none;
+			margin-top: 3.5rem;
 		}
 
 		@include nav() {
@@ -64,9 +66,9 @@
 	}
 
 	hr {
-		height: 2px;
+		height: 1.5px;
 		border: none;
-		width: 100%;
+		width: 80%;
 		margin: 0;
 		background-color: #ffce00;
 		display: none;
