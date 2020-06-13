@@ -1,26 +1,4 @@
 <script>
-  import { onMount } from 'svelte' 	
-  let Macy
-
-  onMount(async ()=>{ 		
-    const macy = await import('macy') 		
-    Macy = macy.default 		
-    var grid = Macy({
-      container: '#grid',
-      trueOrder: false,
-      waitForImages: false,
-      margin: 12,
-      columns: 4,
-      breakAt: {
-          1400: 4,
-          992: 3,
-          768: 3,
-          576: 2
-        }
-    })
-  }) 
-
-
   import Img from './img.svelte'
   export let posts
 </script>
@@ -31,27 +9,30 @@
 	ul {
     list-style: none;
     padding: 0;
-
-    display: grid;
-    grid-template-rows: auto;
-    gap: 12px;
-    grid-template-columns: repeat(2, 1fr);
-    @include small() { grid-template-columns: repeat(2, 1fr); }
-    @include medium() { grid-template-columns: repeat(3, 1fr); }
-    @include large() { grid-template-columns: repeat(3, 1fr); }
-    @include extra() { grid-template-columns: repeat(4, 1fr); }
+    
+    column-count: 2;
+    column-gap: 1rem;
+    @include small() { column-count: 2; }
+    @include medium() { column-count: 3; }
+    @include large() { column-count: 3; }
+    @include extra() { column-count: 4; }
 
     li {
+      display: inline-block;
+      margin-bottom: 1rem;
+      width: 100%;
 
       a {
         display: block;
       }
+
       img {
         width: 100%;
         height: auto;
       }
     }
-	}
+
+  }
 </style>
 
 <ul id='grid'>
