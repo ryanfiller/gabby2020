@@ -15,7 +15,7 @@
     }
 
   div {
-    max-width: 40rem;
+    max-width: 60rem;
     margin: 0 auto;
     object-fit: cover;
   }

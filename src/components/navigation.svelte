@@ -15,12 +15,12 @@
 		font-weight: bold;
 		img {
 			display: block;
-			width: 7.5rem;
+			width: 9rem;
 			margin-top:.75rem;
 			
 			@include nav() {
 				width: 100%;
-				max-width: 17rem;
+				max-width: 19rem;
 			}
 		}
 	}
@@ -37,7 +37,7 @@
 		padding: .75rem;
 		display: flex;
 		justify-content: flex-start;
-		font-size: .8rem;
+		font-size: .9rem;
 		
 		@include nav() {
 			flex-direction: column;

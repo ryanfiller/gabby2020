@@ -29,15 +29,13 @@
 	}
 
 	:global(nav) {
-		
-
 		align-self: stretch;
 		width: 100%;
 
 		@include nav() {
 			flex: 1;
-			min-width: 10.5rem;
-			max-width: 15.5rem;
+			min-width: 11rem;
+			max-width: 16rem;
 		}
 	}
 	:global(main) {
