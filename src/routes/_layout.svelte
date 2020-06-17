@@ -25,6 +25,7 @@
 		@include nav() {
 			display: flex;
 			width: 100vw;
+			max-height: 100vh;
 		}
 	}
 
@@ -36,6 +37,7 @@
 			flex: 1;
 			min-width: 11rem;
 			max-width: 16rem;
+			overflow: auto;
 		}
 	}
 	:global(main) {
@@ -45,6 +47,7 @@
 		background: #eceeee;
 
 		@include nav() {
+			overflow: auto;
 			padding: 2rem;
 			overflow: auto;
 		}
