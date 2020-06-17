@@ -1,4 +1,5 @@
 <script context="module">
+  import marked from 'marked'
   import img from '../../components/img.svelte'
   export { img }
 </script>
@@ -6,6 +7,7 @@
 <script>
   export let title
   export let description
+  description = marked(description)
 </script>
 
 <style type="text/scss">
@@ -22,8 +24,8 @@
     font-size: 1.75rem;
   }
 
-  .description {
-    font-size: 1.125rem;
+  p {
+    font-size: 1.025rem;
   }
 
   :global(h2) {
@@ -58,9 +60,7 @@
     <h1>
       {title}
     </h1>
-    <p class='description'>
-      {description}
-    </p>
+    {@html description}
   </header>
   <div class='content'>
     <slot /> 
