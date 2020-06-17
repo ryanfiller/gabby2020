@@ -8,9 +8,9 @@
 <style type="text/scss">
   img {
     display: block;
-    height: 100%;
-    // max-height: 90vh;
-    width: auto;
+    // height: 100%;
+    // // max-height: 90vh;
+    width: 100%;
     margin-bottom: 1rem;
 
     &.small {

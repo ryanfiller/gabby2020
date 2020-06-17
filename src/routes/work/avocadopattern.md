@@ -2,10 +2,8 @@
 title: Avocado Pattern
 thumbnail: images/Avocado-Tote.jpg
 order: 1000
+description: Pattern created as a learning aid to demonstrate to students the capabilities of the Adobe Illustrator pattern tool. Also used as an explaination of color theory.
 ---
-
-Pattern created as a learning aid to demonstrate to students the capabilities of the Adobe Illustrator pattern tool. Also used as an explaination of color theory.
-
 
 !['alt text here'](images/Avocado-Tote.jpg)
 
@@ -13,5 +11,6 @@ Pattern created as a learning aid to demonstrate to students the capabilities of
 
 !['alt text here'](images/Avocado-Outlines.png)
 
-Analogous—Complimentary—Split Complimentary
+## Analogous—Complimentary—Split Complimentary
+
 !['alt text here'](images/Avocado-Pattern-Tri.png)

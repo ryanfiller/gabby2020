@@ -5,39 +5,46 @@
 
 <script>
   export let title
+  export let description
 </script>
 
 <style type="text/scss">
   @import '../../_styles/fonts.scss';
   @import '../../_styles/functions.scss';
   
-  h1 {
-    @include serif(700, normal);
-  }
-
-  div {
+  article {
     max-width: 50rem;
     margin: 0 auto;
+  }
+
+  h1 {
+    @include serif(700, normal);
+    font-size: 1.75rem;
+  }
+
+  .description {
     font-size: 1.125rem;
+  }
 
-    @include extra {
-      // max-width: 100%;
+  :global(h2) {
+    font-size: .9rem;
+  }
 
-      // display: grid;
-      // grid-template-columns: 1fr 1fr;
-      // gap: 1rem;
+  @include extra {
+    article {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+    }
 
-      // h1 {
-      //   grid-column:  1 / 3;
-      // }
+    header {
+      padding-right: 1rem;
+      grid-column:  1 / 2;
+    }
 
-      // :global(img) {
-      //   grid-column:  1 / 2;
-      // }
-
-      // :global(p) {
-      //   grid-column:  2 / 3;
-      // }
+    .content {
+      grid-column:  2 / 3;
     }
   }
 </style>
@@ -46,7 +53,16 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div> 
-  <h1>{title}</h1>
-  <slot /> 
-</div>
+<article> 
+  <header>
+    <h1>
+      {title}
+    </h1>
+    <p class='description'>
+      {description}
+    </p>
+  </header>
+  <div class='content'>
+    <slot /> 
+  </div>
+</article>
