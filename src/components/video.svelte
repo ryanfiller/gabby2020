@@ -9,8 +9,10 @@
     margin-bottom: 1rem;
 
     &.not-tall {
+      height: auto;
       max-height: 90vh;
       width: auto;
+      max-width: 100%;
       margin-right: auto;
     }
   }

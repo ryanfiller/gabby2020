@@ -37,11 +37,11 @@
 	nav {
 		padding: .75rem;
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-between;
 		font-size: .9rem;
 		
 		@include nav() {
-			flex-direction: column;
+			display: block;
 			padding: 1.25rem;
 		}
 	}
