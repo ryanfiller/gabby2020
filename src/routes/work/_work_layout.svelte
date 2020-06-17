@@ -7,7 +7,9 @@
 <script>
   export let title
   export let description
-  description = marked(description)
+  if(description) {
+    description = marked(description)
+  }
 </script>
 
 <style type="text/scss">
