@@ -33,6 +33,7 @@
 			color: #ffce00;
 		}
 	}
+
 	nav {
 		padding: .75rem;
 		display: flex;

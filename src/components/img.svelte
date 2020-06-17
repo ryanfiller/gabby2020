@@ -2,21 +2,30 @@
   import Video from './video.svelte'
   export let alt
   export let src
-
-  export let gridArea
-  const style = `grid-area: ${gridArea};`
+  export let small
 </script>
 
-<style>
+<style type="text/scss">
   img {
-    height: 100%;
+    display: block;
+    // height: 100%;
+    // // max-height: 90vh;
     width: 100%;
-    object-fit: cover;
+    margin-bottom: 1rem;
+
+    &.small {
+      max-width: 25rem;
+      margin-right: auto;
+    }
   }
 </style>
 
 {#if src.includes('.mp4')}
-  <Video src={src} {style} />
+  <Video src={src} />
 {:else }
-  <img src={`${src}?nf_resize=fit&w=750`} alt={alt} {style} />
+  <img
+    alt={alt}
+    src={`${src}?nf_resize=fit&w=750`}
+    class="{!!small ? 'small' : ''}"
+  />
 {/if}
