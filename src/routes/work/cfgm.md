@@ -13,13 +13,9 @@ The overarching campaign, 'Transformation Starts Here," was developed for *The C
 !['alt text here'](images/CFGM-Photo-Small.jpg)
 
 Die-cut Invitation Sleeve—Front and Back
+!['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg)
 
-<Grid>
-
-  !['alt text here'](images/CFGM-InviteSleeve-Front-Small.jpg){gridArea='1 / 1 / 2 / 3'}
-
-  !['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg){gridArea='2 / 2 / 3 / 4'}
-</Grid>
+!['alt text here'](images/CFGM-InviteSleeve-Back-Small.jpg)
 
 Invitation—Front and Back
 !['alt text here'](images/CFGM-Invite-Front-Small.jpg)
@@ -27,7 +23,7 @@ Invitation—Front and Back
 !['alt text here'](images/CFGM-Invite-Back-Small.jpg)
 
 Invitation—Digital
-!['alt text here'](images/CFGM-DigInvite-Small.jpg)
+!['alt text here'](images/CFGM-DigInvite-Small.jpg){small=true}
 
 Facebook Event Promo
 !['alt text here'](images/CFGM-Facebook-Small.jpg)
